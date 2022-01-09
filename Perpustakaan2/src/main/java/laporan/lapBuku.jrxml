@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cb341fef-ba0a-41f3-a177-7af9ef8ced7d">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select buku.id, jenisbuku.namajenisbuku, buku.namabuku, buku.harga from buku, jenisbuku]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="namajenisbuku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="namabuku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="5" y="2" width="83" height="20" forecolor="#666666" backcolor="#99CCFF" uuid="2328e4f8-abbf-4de7-93e6-14d32764e1ec"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="88" y="2" width="128" height="20" forecolor="#666666" backcolor="#99CCFF" uuid="655743c9-0840-44cb-aa3a-b0fdce18f74c"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[namajenisbuku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="216" y="2" width="181" height="20" forecolor="#666666" backcolor="#99CCFF" uuid="bd1b7de7-f8ac-4657-bc34-b04a57b28711"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[namabuku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="397" y="2" width="158" height="20" forecolor="#666666" backcolor="#99CCFF" uuid="e374e01e-845b-4bdb-9942-fe4ef153eeda"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="3" width="83" height="20" uuid="65c97af8-7dd4-48c9-9436-71022cad1b66"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="88" y="2" width="128" height="20" uuid="53d13444-2596-4308-85a1-d66de8007411"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{namajenisbuku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="2" width="181" height="20" uuid="0ce936aa-ad73-4248-807e-c3fcb0d02f2a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{namabuku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="397" y="2" width="158" height="20" uuid="f9569c21-f6e7-4c12-a7f7-29b95aa88880"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
